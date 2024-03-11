@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden; /* Prevent vertical scrolling */
+  }
+  
+  .container {
+    min-height: 100vh; /* Ensure the container fills at least the height of the viewport */
+  }
+  
