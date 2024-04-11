@@ -21,7 +21,7 @@ function Sidebar({onLinkClick}) {
         </svg>
       </button>
       <div className="inline-block py-2 mb-2">
-        <h1 className="text-black transition-opacity duration-300 font-bold text-2xl" style={{ display: sidebarOpen ? 'block' : 'none' }}>ABC Corp.</h1>
+        <h1 className="text-black transition-opacity duration-300 font-bold text-2xl" style={{ display: sidebarOpen ? 'block' : 'none' }}>Brand</h1>
        
         <div className="py-4 px-6 text-black" >
         
@@ -66,6 +66,16 @@ function Sidebar({onLinkClick}) {
               className="w-full py-2 text-left hover:bg-gray-400"
             >
               Distribution
+            </button>
+          </li>
+        </Link>
+        <Link to="/dashboard/distribution">
+          <li>
+            <button
+              onClick={() => handleLinkClick('myorganisation')}
+              className="w-full py-2 text-left hover:bg-gray-400"
+            >
+              Users
             </button>
           </li>
         </Link>

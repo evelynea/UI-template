@@ -1,3 +1,6 @@
+import { Link } from 'react-router-dom'; 
+
+
 export default function UserLogin(){
     return(        
         <div class="bg-white dark:bg-gray-900">
@@ -37,15 +40,19 @@ export default function UserLogin(){
                                     </div>
 
                                     <div class="mt-6">
+            <Link to="/dark-dashboard">
+
+
                                         <button
                                             class="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                             Sign in
                                         </button>
+                                                </Link>
                                     </div>
 
                                 </form>
 
-                                <p class="mt-6 text-sm text-center text-gray-400">Don&#x27;t have an account yet? <a href="#" class="text-blue-500 focus:outline-none focus:underline hover:underline">Sign up</a>.</p>
+                                <p class="mt-6 text-sm text-center text-gray-400">Forgot your password?<a href="#" class="text-blue-500 focus:outline-none focus:underline hover:underline">Reset</a>.</p>
                             </div>
                         </div>
                     </div>
